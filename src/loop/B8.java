@@ -85,18 +85,24 @@ public class B8 {
             } while (arr[i] > 4);
         }
         int total = 0;
-        for (int i: arr) {
-            total += (i + 3) / 4;
+        for (int i = 0; i < size; i++) {
+            total += arr[i];
         }
-        System.out.println("Tổng số lượng bánh chưng cho " + size + " nhóm là " + total + " cái");
+        int count = 0;
+        if (total % 4 > 0){
+            count = total / 4 + 1;
+        } else {
+            count = total / 4;
+        }
+        System.out.println("Tổng số lượng bánh chưng cho " + size + " nhóm là " + count + " cái");
     }
 }
 
 class MainB8 {
     public static void main(String[] args) {
         B8 b8 = new B8();
-        b8.B81();
-        b8.B82();
+        //b8.B81();
+        //b8.B82();
         b8.B83();
     }
 }
