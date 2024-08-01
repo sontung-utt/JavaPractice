@@ -101,8 +101,8 @@ public class B8 {
 class MainB8 {
     public static void main(String[] args) {
         B8 b8 = new B8();
-        //b8.B81();
-        //b8.B82();
+        b8.B81();
+        b8.B82();
         b8.B83();
     }
 }
